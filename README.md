@@ -7,7 +7,11 @@ Hint of Colors was a fork of Hint of green, however, V2 revamps hint of colors w
 ## Tested on
 
 - Chrome, Firefox, Safari and common Jellyfin applications
-- Jellyfin 10.6 - 10.8.0
+- Jellyfin 10.6 - 10.9.0
+
+## WIP
+
+- Mobile item detail page
 
 ## Features
 
