@@ -103,11 +103,11 @@ add_header Content-Security-Policy "default-src https: data: blob: http://image.
 - Manually scan media library
 - Refresh the page once done
 
-### To enable skip-intro button (Jellyfin Media Player 1.8.0+ has unofficialsupport)
+### To enable skip button for intros and credits (Jellyfin Media Player 1.8.0+ has unofficial support)
 
-- Install the plugin https://github.com/ConfusedPolarBear/intro-skipper
-- Either use jmp and/or webclient manually or use the web client modified by ConfusedPolarBear
-- Only then would my css apply to a skip-intro button
+- Install the [Intro Skipper](https://github.com/jumoog/intro-skipper) plugin
+- Either use Jellyfin Media Player (Intro Skipper should be enabled in Client Settings as it's disabled by default) and/or Jellyfin Web (`index.html` of Jellyfin Web should have correct permissions)
+- Only then would my css apply to the skip button
 
 https://user-images.githubusercontent.com/98979876/173202316-a194406d-5b76-4b6c-b736-804e37482cc7.mp4
 
