@@ -93,6 +93,16 @@ If you are using nginx as a reverse proxy for Jellyfin, replace the "add_header 
 add_header Content-Security-Policy "default-src https: data: blob: http://image.tmdb.org; style-src 'self' 'unsafe-inline' https://fallenbagel.github.io ; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com blob:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
 ```
 
+### To enable Jellyfin Splash Screen on Login Page
+
+Add this Custom CSS into `Dashboard > General > Custom CSS`.
+```css
+#loginPage {
+  background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.35') !important;
+  }
+```
+You can also customize the opacity of foreground layer of the splash screen by adjusting the value in the url.
+
 ### To enable fanart/logo
 
 - Install the Fanart plugin first
