@@ -1666,3 +1666,8 @@ margin-right:0
   justify-content: center;
   margin-top: 30px;
 }
+
+/* Hide items with the .hide class no matter what */
+[dir=ltr] .hide {
+  display: none !important;
+}
