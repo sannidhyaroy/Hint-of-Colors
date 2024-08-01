@@ -75,43 +75,55 @@
 @font-face {
   font-family: "Netflix Sans";
   font-weight: 100;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff");
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
 }
 
 @font-face {
   font-family: "Netflix Sans";
   font-weight: 300;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff");
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+      format("woff");
 }
 
 @font-face {
   font-family: "Netflix Sans";
   font-weight: 400;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff");
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
 }
 
 @font-face {
   font-family: "Netflix Sans";
   font-weight: 700;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff");
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+      format("woff");
 }
 
 @font-face {
   font-family: "Netflix Sans";
   font-weight: 800;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff");
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+      format("woff");
 }
 
 @font-face {
   font-family: "Netflix Sans";
   font-weight: 900;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff");
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
+      format("woff");
 }
 
 /* LOGIN Section */
@@ -687,7 +699,7 @@ div[data-role="page"]:not(.withTabs) {
 .paper-icon-button-light,
 .paperList,
 .playedIndicator,
-.primaryImageWrapper>img,
+.primaryImageWrapper > img,
 .raised,
 .sessionNowPlayingInnerContent,
 .toast,
@@ -973,9 +985,11 @@ video:cue {
 }
 
 .backgroundContainer.withBackdrop {
-  background: radial-gradient(circle at 100% 0%,
-      rgba(0, 0, 0, 0) 20%,
-      rgba(0, 0, 0, 0.9) 60%);
+  background: radial-gradient(
+    circle at 100% 0%,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.9) 60%
+  );
 }
 
 .itemProgressBar {
@@ -984,11 +998,11 @@ video:cue {
 }
 
 .itemProgressBarForeground,
-.playbackProgress>div {
+.playbackProgress > div {
   background-color: var(--playback-progress);
 }
 
-.transcodingProgress>div {
+.transcodingProgress > div {
   background-color: var(--transcode-progress) !important;
 }
 
@@ -1039,7 +1053,7 @@ video:cue {
   border-style: none;
 }
 
-.emby-checkbox:checked+span+.checkboxOutline {
+.emby-checkbox:checked + span + .checkboxOutline {
   background-color: var(--buttons);
   border-style: none;
 }
@@ -1129,7 +1143,7 @@ a[data-role="button"]:hover {
   background: var(--buttons-hover) !important;
 }
 
-div[data-role="controlgroup"] a[data-role="button"]+a[data-role="button"] {
+div[data-role="controlgroup"] a[data-role="button"] + a[data-role="button"] {
   margin: 0 !important;
 }
 
@@ -1162,7 +1176,7 @@ div[data-role="controlgroup"] a[data-role="button"]+a[data-role="button"] {
   background-color: var(--buttons) !important;
 }
 
-.dashboardSection .sectionTitleTextButton>.material-icons.material-icons {
+.dashboardSection .sectionTitleTextButton > .material-icons.material-icons {
   margin-left: 0.5em;
 }
 
@@ -1266,7 +1280,9 @@ div[data-role="controlgroup"] a[data-role="button"]+a[data-role="button"] {
   color: #434343 !important;
 }
 
-:not(.detailImageContainer)>.card:not(.overflowSquareCard) .cardImageContainer::before {
+:not(.detailImageContainer)
+  > .card:not(.overflowSquareCard)
+  .cardImageContainer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1278,11 +1294,15 @@ div[data-role="controlgroup"] a[data-role="button"]+a[data-role="button"] {
   transition: 0.4s;
 }
 
-:not(.detailImageContainer)>.card:not(.overflowSquareCard):hover .cardImageContainer::before {
+:not(.detailImageContainer)
+  > .card:not(.overflowSquareCard):hover
+  .cardImageContainer::before {
   transform: scale(1.02);
 }
 
-:not(.detailPageSecondaryContainer)>.card:not(.overflowSquareCard) .cardImageContainer::before {
+:not(.detailPageSecondaryContainer)
+  > .card:not(.overflowSquareCard)
+  .cardImageContainer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1295,7 +1315,9 @@ div[data-role="controlgroup"] a[data-role="button"]+a[data-role="button"] {
   transition: 0.4s;
 }
 
-:not(.detailPageSecondaryContainer)>.card:not(.overflowSquareCard):hover .cardImageContainer::before {
+:not(.detailPageSecondaryContainer)
+  > .card:not(.overflowSquareCard):hover
+  .cardImageContainer::before {
   transform: scale(1.02);
 }
 
@@ -1407,15 +1429,19 @@ div[data-role="controlgroup"] a[data-role="button"]+a[data-role="button"] {
 
 .videoOsdBottom {
   background-color: rgba(0, 0, 0, 0) !important;
-  background-image: linear-gradient(rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.4)) !important;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.4)
+  ) !important;
   padding-top: 1em;
 }
 
 .headerTop {
   background-color: rgba(0, 0, 0, 0) !important;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0)) !important;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  ) !important;
 }
 
 .sliderBubble {
@@ -1437,8 +1463,8 @@ div[data-role="controlgroup"] a[data-role="button"]+a[data-role="button"] {
   display: block;
 }
 
-.hide+.detailPageWrapperContainer .itemName,
-.hide+.detailPageWrapperContainer .parentName {
+.hide + .detailPageWrapperContainer .itemName,
+.hide + .detailPageWrapperContainer .parentName {
   display: block !important;
 }
 
