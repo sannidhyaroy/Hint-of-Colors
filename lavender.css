@@ -453,12 +453,12 @@ html {
   display: block;
 }
 
-.layout-mobile .detailImageContainer .card,
+/*.layout-mobile .detailImageContainer .card,
 .layout-mobile .detailImageContainer .card.backdropCard,
 .layout-mobile .detailImageContainer .card.squareCard {
   top: auto;
   display: none;
-}
+}*/
 
 /* Hide the fucking logo on mobile */
 .layout-mobile .detailLogo {

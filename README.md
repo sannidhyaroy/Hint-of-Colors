@@ -93,6 +93,16 @@ If you are using nginx as a reverse proxy for Jellyfin, replace the "add_header 
 add_header Content-Security-Policy "default-src https: data: blob: http://image.tmdb.org; style-src 'self' 'unsafe-inline' https://fallenbagel.github.io ; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com blob:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
 ```
 
+### To enable Jellyfin Splash Screen on Login Page
+
+Add this Custom CSS into `Dashboard > General > Custom CSS`.
+```css
+#loginPage {
+  background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.35') !important;
+  }
+```
+You can also customize the opacity of foreground layer of the splash screen by adjusting the value in the url.
+
 ### To enable fanart/logo
 
 - Install the Fanart plugin first
@@ -103,11 +113,11 @@ add_header Content-Security-Policy "default-src https: data: blob: http://image.
 - Manually scan media library
 - Refresh the page once done
 
-### To enable skip-intro button (Jellyfin Media Player 1.8.0+ has unofficialsupport)
+### To enable skip button for intros and credits (Jellyfin Media Player 1.8.0+ has unofficial support)
 
-- Install the plugin https://github.com/ConfusedPolarBear/intro-skipper
-- Either use jmp and/or webclient manually or use the web client modified by ConfusedPolarBear
-- Only then would my css apply to a skip-intro button
+- Install the [Intro Skipper](https://github.com/jumoog/intro-skipper) plugin
+- Either use Jellyfin Media Player (Intro Skipper should be enabled in Client Settings as it's disabled by default) and/or Jellyfin Web (`index.html` of Jellyfin Web should have correct permissions)
+- Only then would my css apply to the skip button
 
 https://user-images.githubusercontent.com/98979876/173202316-a194406d-5b76-4b6c-b736-804e37482cc7.mp4
 
